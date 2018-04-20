@@ -1,0 +1,147 @@
+/*
+Theme Name: A2
+Author: A2 team
+Description: Une description super chouette
+Version: 0.1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: twentyseventeen
+Tags: one-column, two-columns, right-sidebar, flexible-header, accessibility-ready, custom-colors, custom-header, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, post-formats, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+.menu {
+    display: flex;
+}
+
+
+.caption {
+    height: 200px;
+    hyphens: auto;
+    overflow: hidden;
+}
+
+.thumbnail {
+    height: 425px;
+}
+
+.thumbnail img {
+    max-height: 250px;
+    max-width: 375px;
+}
+
+.col-sm-6, .col-lg-3, .col-md-4 {
+    max-width: 345px;
+}
+
+.nav, .navbar-menu {
+    background-color: #919B9C;
+    display: flex;
+}
+
+
+@media (max-width: 767px) {
+    .col-sm-6, .col-md-4, .col-lg-3 {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.fancy-sidebar {
+    border: 2px solid #5A5A5A;
+}
+
+h1 {
+    text-align: center;
+}
+
+.caption p {
+    line-height: 1.8rem;
+    font-size: 1.4rem;
+    overflow: hidden;
+    height: 7.2rem  ;
+}
+
+.btn , .btn-primary {
+    overflow: visible;
+    display: block;
+    position: absolute;
+    bottom: 3rem;
+    right: 3rem;
+}
+
+.caption i {
+    display: block;
+    position: absolute;
+    bottom: 3rem;
+    left: 3rem;
+}
+
+.home-rightside {
+    background-color: rgba(202,50,150,0.3);
+}
+
+.home-leftside {
+    border-right: 2px solid #5A5A5A;
+    background-color: rgba(21,152,230,0.3);
+}
+
+.searchform {
+    padding-left: 2rem;
+}
+
+.searchform div input {
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+    outline: none;
+    transition: box-shadow 200ms cubic-bezier(0.4,0.0,0.2,1);
+}
+
+.searchform div input:hover {
+    border: none;
+    box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.08);
+}
+.home-leftside, .home-rightside {
+    height: 95.3rem;
+}
+
+.archive-pagination {
+    display: flex;
+}
+
+.page-numbers {
+    display: flex;
+}
+
+.page-numbers li {
+    margin-left: 1.5rem;
+    display: block;
+
+}
+
+.page-numbers li a {
+    color: #111;
+    border: 0.2rem solid white;
+    border-radius: 0.5rem;
+    background-color: palevioletred;
+    padding-right: 0.1rem;
+    padding-left: 0.1rem;
+}
+
+.page-numbers li span {
+    color: #333;
+    border: 0.2rem solid white;
+    border-radius: 0.5rem;
+    background-color: palegreen;
+    padding-right: 0.1rem;
+    padding-left: 0.1rem;
+}
