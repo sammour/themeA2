@@ -34,19 +34,6 @@ function ajoutMenus() {
 	                             'id'            => "sidebar-1",
 
 	));
-	$new_menu_id = wp_create_nav_menu('azerty');
-	$page_args = array(
-		'menu-item-url' => home_url() . '/films',
-		'menu-item-title' => 'Films',
-		'menu-item-type' => 'custom',
-		'menu-item-status' => 'publish',
-	);
-	if ( $new_menu_id > 0 ) {
-		// set our new MENU up at our theme's nav menu location
-		set_theme_mod( 'nav_menu_locations' , array( 'primary' => $new_menu_id ) ); 
-		// add a menu item to that new menu
-		wp_update_nav_menu_item( $new_menu_id , 0, $page_args );
-	}
 }
 
 function my_nav_menu_submenu_css_class( $classes ) {

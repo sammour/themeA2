@@ -43,8 +43,18 @@ Use it to make something cool, have fun, and share what you've learned with othe
 }
 
 .nav, .navbar-menu {
-    background-color: #919B9C;
+    background-color: #f1f1f1;
     display: flex;
+}
+
+.navbar-menu li a {
+    color: darkgreen;
+    font-weight: 600;
+}
+
+.navbar-menu li a:hover {
+    color: #fff;
+    background-color: #333 !important;
 }
 
 
